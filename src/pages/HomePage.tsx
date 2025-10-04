@@ -148,17 +148,17 @@ export default function HomePage() {
       {/* Section 2 */}
       <section
         ref={sectionRefs[1]}
-        className="w-screen h-screen flex-shrink-0 flex items-center justify-start relative z-20"
+        className="w-full flex-shrink-0 flex items-center justify-start relative z-20"
       >
         <div className="flex flex-col md:flex-row justify-between w-full h-full">
-          <div className="md:w-3/4 left-0 min-h-screen flex items-center justify-center">
+          <div className="md:w-3/4 left-0  flex items-center justify-center">
             <h1
-              className={`lg:text-[10rem] lg:leading-[8rem] leading-[4rem] md:text-[5rem] text-[5rem] font-normal transition-colors duration-500 ${textColors[scrollStage]}`}
+              className={`lg:text-[10rem] mt-[6rem] lg:leading-[8rem] leading-[4rem] md:text-[5rem] text-[5rem] font-normal transition-colors duration-500 ${textColors[scrollStage]}`}
             >
-              Skills & <span className="block">Projects</span>
+              Skills & <span className="block md:block lg:block">Projects</span>
             </h1>
           </div>
-          <div className="md:w-3/4 p-[2rem] right-0 min-h-screen flex items-center justify-center">
+          <div className="md:w-3/4  p-[2rem] right-0 min-h-screen flex items-center justify-center">
             <Skills />
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function HomePage() {
           </div>
 
           {/* Second row */}
-          <div className="w-full flex items-center justify-center p-6">
+          <div className="w-full mt-[-3rem] flex items-center justify-center p-6">
             <Work />
           </div>
 

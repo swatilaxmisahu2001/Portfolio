@@ -22,7 +22,7 @@ const tools: string[] = [
 
 const Tools: React.FC = () => {
   return (
-    <div className="w-full overflow-hidden py-20 absolute">
+    <div className="w-full overflow-hidden hidden lg:block md:block py-20 absolute">
       <div className="animate-marquee whitespace-nowrap flex items-center gap-12">
         {tools.concat(tools).map((tool: string, index: number) => {
           const offset: number = Math.floor(Math.random() * 40); // 0-40px vertical offset

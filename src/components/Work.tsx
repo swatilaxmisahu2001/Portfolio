@@ -38,7 +38,7 @@ const experiences: WorkExperience[] = [
 const Work: React.FC = () => {
   return (
     <div className=" flex flex-col items-center justify-center p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1 w-full max-w-6xl">
         {experiences.map((exp, index) => (
           <div
             key={index}

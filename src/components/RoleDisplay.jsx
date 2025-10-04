@@ -3,21 +3,11 @@ import React, { useState } from "react";
 const roles = [
   {
     id: 1,
-    title: "Developer",
-    description: "Responsible for writing and maintaining Frontend code.",
-  },
-  {
-    id: 2,
-    title: "Designer",
-    description: "I Create UI/UX designs and visuals.",
-  },
-  {
-    id: 3,
     title: "Cloud",
     description: "Cloud Security Incident response",
   },
   {
-    id: 4,
+    id: 2,
     title: "Firewall",
     description: "Woking on Operations",
   },
