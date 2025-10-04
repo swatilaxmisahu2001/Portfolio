@@ -5,6 +5,11 @@ import Intro from "../components/Intro";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 import RoleDisplay from "../components/RoleDisplay";
+import Skills from "../components/Skills";
+import Work from "../components/Work";
+import Tools from "../components/Tools";
+import Download from "../components/Download";
+import Contact from "../components/Contact";
 
 export default function HomePage() {
   const [scrollStage, setScrollStage] = useState(0);
@@ -29,7 +34,7 @@ export default function HomePage() {
     "text-[#77AFD8]",
     "text-[#9c4e23]",
     "text-[#164c3b]",
-    "text-[#f2fbfe]",
+    "text-[#5440AB]",
   ];
 
   useEffect(() => {
@@ -83,7 +88,7 @@ export default function HomePage() {
 
           {/* Main Heading with scroll-based text color */}
           <div
-            className={`text-[5rem] lg:text-[13rem] md:text-[12rem] text-[5rem]  font-thin col-span-3 lg:my-[-4rem] md:my-[-3rem]  font-bright transition-colors duration-500 ${textColors[scrollStage]}`}
+            className={`lg:text-[13rem] md:text-[12rem] text-[5rem]  font-thin col-span-3 lg:my-[-4rem] md:my-[-3rem]  font-bright transition-colors duration-500 ${textColors[scrollStage]}`}
           >
             SwatiSahu's
           </div>
@@ -143,13 +148,20 @@ export default function HomePage() {
       {/* Section 2 */}
       <section
         ref={sectionRefs[1]}
-        className="w-screen h-screen flex-shrink-0 flex items-center justify-center relative z-20"
+        className="w-screen h-screen flex-shrink-0 flex items-center justify-start relative z-20"
       >
-        <h1
-          className={`text-6xl font-bold transition-colors duration-500 ${textColors[scrollStage]}`}
-        >
-          Skills & Projects
-        </h1>
+        <div className="flex flex-col md:flex-row justify-between w-full h-full">
+          <div className="md:w-3/4 left-0 min-h-screen flex items-center justify-center">
+            <h1
+              className={`lg:text-[10rem] lg:leading-[8rem] leading-[4rem] md:text-[5rem] text-[5rem] font-normal transition-colors duration-500 ${textColors[scrollStage]}`}
+            >
+              Skills & <span className="block">Projects</span>
+            </h1>
+          </div>
+          <div className="md:w-3/4 p-[2rem] right-0 min-h-screen flex items-center justify-center">
+            <Skills />
+          </div>
+        </div>
       </section>
 
       {/* Section 3 */}
@@ -157,28 +169,57 @@ export default function HomePage() {
         ref={sectionRefs[2]}
         className="w-screen h-screen flex-shrink-0 flex items-center justify-center relative z-20"
       >
-        <h1
-          className={`text-6xl font-bold transition-colors duration-500 ${textColors[scrollStage]}`}
-        >
-          Section 3 Dummy
-        </h1>
+        <div className="flex flex-col w-full items-center justify-center h-full">
+          {/* First row */}
+          <div className="w-full flex items-center justify-center">
+            <h1
+              className={`lg:text-[10rem] lg:leading-[8rem] leading-[4rem] md:text-[5rem] text-[5rem] font-normal transition-colors duration-500 ${textColors[scrollStage]}`}
+            >
+              Work & Tools
+            </h1>
+          </div>
+
+          {/* Second row */}
+          <div className="w-full flex items-center justify-center p-6">
+            <Work />
+          </div>
+
+          {/* Third row */}
+          <div className="w-full flex items-center justify-center">
+            <Tools />
+          </div>
+        </div>
       </section>
 
       {/* Section 4 */}
+      {/* Section 4 */}
       <section
         ref={sectionRefs[3]}
-        className="w-screen h-screen flex-shrink-0 flex items-center justify-center relative z-20"
+        className="w-screen  flex-shrink-0 flex  z-20"
       >
-        <h1
-          className={`text-6xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
- font-bold transition-colors duration-500 ${textColors[scrollStage]}`}
-        >
-          Download Resume
-        </h1>
+        <div className="flex flex-col w-full items-center justify-center relative pb-32">
+          {/* Content rows */}
+          <div className="flex w-full h-full">
+            <div className="w-full flex items-center justify-start">
+              <div className="p-20">
+                <Contact />
+              </div>
+              <h1
+                className={`absolute  bottom-4 right-4 pb-20 lg:text-[10rem] lg:leading-[8rem] leading-[4rem] md:text-[5rem] text-[5rem] font-normal transition-colors duration-500 ${textColors[scrollStage]}`}
+              >
+                Download{" "}
+                <span className="block">
+                  Resume <Download />
+                </span>
+              </h1>
+            </div>
+          </div>
+        </div>
       </section>
+
       {/* Nav Bar */}
       <div className="fixed bottom-10 left-0 w-full z-50 flex justify-center items-end space-x-6 h-20 bg-transparent">
-        {["Home", "Skills", "Projects", "Resume"].map((label, index) => (
+        {["Home", "Skills", "Experience", "Resume"].map((label, index) => (
           <div key={index} className="flex flex-col items-center space-y-2">
             <button
               onClick={() =>

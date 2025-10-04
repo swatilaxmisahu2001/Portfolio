@@ -9,7 +9,7 @@ const roles = [
   {
     id: 2,
     title: "Designer",
-    description: "Creates UI/UX designs and visuals.",
+    description: "I Create UI/UX designs and visuals.",
   },
   {
     id: 3,
