@@ -17,7 +17,7 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
-    "homepage": "https://github.com/swatilaxmisahu2001/Portfolio.git"
+    "homepage": "https://swatilaxmisahu2001.github.io/Portfolio"
   },
   "scripts": {
     "start": "react-scripts start",
