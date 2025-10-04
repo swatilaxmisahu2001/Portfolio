@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.32ba4cf6.css",
+    "main.js": "/static/js/main.13de38ef.js",
+    "static/js/453.117b0875.chunk.js": "/static/js/453.117b0875.chunk.js",
+    "static/media/Swati.jpg": "/static/media/Swati.c801c9a7836ea7b37f66.jpg",
+    "static/media/Resume_SE.pdf": "/static/media/Resume_SE.b6a6787d8f73b82db6d7.pdf",
+    "static/media/logo.png": "/static/media/logo.f82e1ef3274c2d05413f.png",
+    "index.html": "/index.html",
+    "main.32ba4cf6.css.map": "/static/css/main.32ba4cf6.css.map",
+    "main.13de38ef.js.map": "/static/js/main.13de38ef.js.map",
+    "453.117b0875.chunk.js.map": "/static/js/453.117b0875.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32ba4cf6.css",
+    "static/js/main.13de38ef.js"
+  ]
+}
